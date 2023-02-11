@@ -1,0 +1,18 @@
+import calendar
+
+def print_calendar(year, month):
+    calendar.setfirstweekday(calendar.SUNDAY)
+    cal = calendar.monthcalendar(year, month)
+    print("Sun Mon Tue Wed Thu Fri Sat")
+    for row in cal:
+        for day in row:
+            if day == 0:
+                print("    ", end="")
+            else:
+                print("{:4d}".format(day), end="")
+        print("")
+
+year = int(input("Enter year: "))
+month = int(input("Enter month: "))
+
+print_calendar(year, month)
