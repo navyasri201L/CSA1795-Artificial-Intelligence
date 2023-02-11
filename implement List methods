@@ -1,0 +1,25 @@
+fruits = ['apple', 'banana', 'cherry', 'date']
+
+fruits.append('elderberry')
+print(fruits)
+
+fruits.insert(1, 'blueberry')
+print(fruits)
+
+fruits.remove('banana')
+print(fruits)
+
+del fruits[3]
+print(fruits)
+
+print(len(fruits))
+
+print(fruits[2])
+
+print('apple' in fruits)
+
+fruits.sort()
+print(fruits)
+
+fruits.sort(reverse=True)
+print(fruits)
